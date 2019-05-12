@@ -12,5 +12,8 @@ export class ApiService {
   addUser(user): Observable<any> {
     return this.http.post(`${this.uri}adduser`, user);
   }
+  addUserCard(user): Observable<any> {
+    return this.http.post(`${this.uri}subscribe`, user);
+  }
 
 }
